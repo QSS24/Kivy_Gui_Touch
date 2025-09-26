@@ -30,9 +30,11 @@ Class TouchInterface(App, **Kwargs):
       Class FirstPage(self, TouchInterface, Screen, **Kwargs):
            Firstpage = Page_Manager(FirstPage(name= "FirtPage")
 
-      Class SecondPage(ToutchInterface, Screen, **Kwargs):
+      Class SecondPage(TouchInterface, Screen, **Kwargs):
            Secondpage = Page_Manager(SecondPage(name = "SecondPage"))
 
+      Class ThirdPage(Screen, **Kwargs):
+           ThirdPage = Page_Manager(SecondPage(name = "ThirdPage")) 
 
 
 
@@ -49,6 +51,8 @@ Class TouchInterface(App, **Kwargs):
                                     } 
             
      
-
+if __name__ == "__main__"
+InterfaceGuis = TouchInterface.App()
+InterfaceGuis.run()
 
                      
