@@ -1,20 +1,31 @@
-<HomePageUI, LastPageUI,  >:
+<HomePage, LastPage>: 
    StackLayout:
          Color:
          Font: 
-      Button: 
+      Home_Button: 
           Source: "Image"
           Text: "Where the Magic Happens!"
           Color:
           Font: 
+          On_Touch: 
+            root.Manager.Transition.direction = 'up'
+            root.manager.Transition.duration = 1
+            root.manager.current = "HomePage"
 
-      Button: 
+      LastPage_Button: 
           Source: "..."
           Background: 
+          Color:
+          Font: 
+          On_Touch: 
+            root.manager.Transition.direction = 'down'
+            root.manager.transition.duration = 1
+            root.manager.current = "LastPage" 
 
 
-<FirstPageUI>: 
-      GridLayout: 
+<Pages>: 
+      <FirstPage, SecondPage, ThirdPage, FourthPage, FifthPage>:
+         GridLayout: 
          Source: "firstPage.picture"
          Text : " That First Step " 
          Color:
@@ -24,10 +35,4 @@
           Source: "source.img"
           Text:   "
 
-<LastPageUI>:
-      GridLayout: Orientation=Horizontal
-         Soucre: "Source.img"
-         Text: " That's all Folks" 
-         Color: 
-         Font: 20
-<
+   
