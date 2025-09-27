@@ -1,7 +1,7 @@
 From Builder_Files.KV import *
 From Web_scraping_Scrapy.py * 
 Import OrderedDict
-Import Queue
+Import [ Queue, Thread]
 
 Import Parser 
 From Kivy.App import App
@@ -12,6 +12,7 @@ Class TouchInterface(App, **Kwargs):
       def __Super().__init__(Self, **Kwargs):
       def __self(Builder):
           self.Build = Builder.File_load(Builder_Files.kv) 
+
       Config= Set_config(Orientation = Horizontal, sizable = 1)
       Page_Manager = ScreenManger.Config().Add_Widget()
       
