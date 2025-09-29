@@ -6,7 +6,7 @@ Import [ Queue, Thread]
 Import Parser 
 From Kivy.App import App
 From Kivy.Lang import Builder
-From Kivy.uix import [ Config, StackLayout, GridLayout, ScreenManager, Screen, TextInput ]
+From Kivy.uix import [ Config, StackLayout, GridLayout, ScreenManager, Screen, TextInput, Canvas, Graphics, Widget ]
 
 Class TouchInterface(App, **Kwargs):
       def __Super().__init__(Self, **Kwargs):
